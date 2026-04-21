@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-page: #0F1115;
+  --color-bg-card: #161B22;
+  --color-bg-header: #0D1117;
+  --color-border-slate: #30363D;
+  --color-text-green: #3FB950;
+  --color-text-red: #F85149;
+  --color-text-dim: #8B949E;
+  --color-text-main: #E6EDF3;
+  --color-accent-blue: #2563EB;
+
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Courier New', Courier, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-page text-text-main font-sans;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+@layer components {
+  .metric-card {
+    @apply bg-bg-header border border-border-slate rounded-lg p-4 transition-all;
+  }
+  
+  .data-table {
+    @apply w-full text-left font-mono text-[12px] border border-border-slate rounded overflow-hidden;
+  }
+  
+  .table-header {
+    @apply bg-bg-header text-text-dim border-b border-border-slate text-[10px] uppercase font-bold;
+  }
+  
+  .mono-val {
+    @apply font-mono tracking-tight;
+  }
+
+  .label-dim {
+    @apply text-text-dim text-[10px] uppercase font-bold tracking-widest;
+  }
+}

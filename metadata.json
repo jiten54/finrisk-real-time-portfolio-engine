@@ -1,0 +1,6 @@
+{
+  "name": "FinRisk Engine",
+  "description": "Production-grade real-time portfolio and risk analytics engine featuring event-driven architecture, live market data ingestion, and advanced risk metrics like VaR and PnL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
